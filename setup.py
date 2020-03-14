@@ -8,20 +8,20 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 
 setuptools.setup(
-    name={{ project_name }},
+    name="nkazi",
     version="0.0.1",
     author="Kyle Beauregard",
     author_email="kylembeauregard@gmail.com",
-    description={{ project_description }},
+    description="Python feature flag throttling",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kbeauregard/{{ project_name }}",
     license="MIT",
     packages=setuptools.find_packages(
-        include=["{{ project_name }}*",], exclude=["{{ project_name }}/tests"]
+        include=["nkazi*",], exclude=["nkazi/tests"]
     ),
-    py_modules=["{{ project_name }}.__init__",],
-    keywords=[{{ project_keywords }}],
+    py_modules=["nkazi.__init__",],
+    keywords=["throttle", "feature", "flag"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
